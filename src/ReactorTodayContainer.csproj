@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{BFDCE9F3-C040-4CE2-8179-F4FE27BAFD0F}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ReactorTodayContainer</RootNamespace>
+    <AssemblyName>ReactorTodayContainer</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchProfiling>true</MtouchProfiling>
+    <IOSDebuggerPort>40753</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchProfiling>true</MtouchProfiling>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>47761</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="MonkeyCache">
+      <HintPath>packages\MonkeyCache.1.0.0-beta\lib\xamarinios10\MonkeyCache.dll</HintPath>
+    </Reference>
+    <Reference Include="LiteDB">
+      <HintPath>packages\LiteDB.4.1.4\lib\netstandard2.0\LiteDB.dll</HintPath>
+    </Reference>
+    <Reference Include="MonkeyCache.LiteDB">
+      <HintPath>packages\MonkeyCache.LiteDB.1.0.0-beta\lib\xamarinios10\MonkeyCache.LiteDB.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Essentials">
+      <HintPath>packages\Xamarin.Essentials.0.11.0-preview\lib\xamarinios10\Xamarin.Essentials.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter">
+      <HintPath>packages\Microsoft.AppCenter.1.10.0\lib\Xamarin.iOS10\Microsoft.AppCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.iOS.Bindings">
+      <HintPath>packages\Microsoft.AppCenter.1.10.0\lib\Xamarin.iOS10\Microsoft.AppCenter.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Analytics">
+      <HintPath>packages\Microsoft.AppCenter.Analytics.1.10.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Analytics.iOS.Bindings">
+      <HintPath>packages\Microsoft.AppCenter.Analytics.1.10.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Distribute">
+      <HintPath>packages\Microsoft.AppCenter.Distribute.1.10.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Distribute.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Distribute.iOS.Bindings">
+      <HintPath>packages\Microsoft.AppCenter.Distribute.1.10.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Distribute.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Crashes">
+      <HintPath>packages\Microsoft.AppCenter.Crashes.1.10.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Crashes.iOS.Bindings">
+      <HintPath>packages\Microsoft.AppCenter.Crashes.1.10.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Push">
+      <HintPath>packages\Microsoft.AppCenter.Push.1.10.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Push.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Push.iOS.Bindings">
+      <HintPath>packages\Microsoft.AppCenter.Push.1.10.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Push.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Humanizer">
+      <HintPath>packages\Humanizer.Core.2.5.1\lib\netstandard2.0\Humanizer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iPad Spotlight 40pt.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iPhone Spotlight 40pt%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iPhone Spotlight 40pt%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iPhone App 60pt%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iPad Notification 20pt.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iPad Notification 20pt%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iPad Settings 29pt.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iPad Spotlight 40pt%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iPhone App 60pt%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\App Store iOS.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\60.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\87.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\152.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\100.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\16.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\32.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\64.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\128.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\256.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\512.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\1024.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon44x44%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon24x24%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon27.5x27.5%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon98x98%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppIcon86x86%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="ViewControllers\" />
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewControllers\ViewController.cs" />
+    <Compile Include="ViewControllers\ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\EventsTableViewController.cs" />
+    <Compile Include="ViewControllers\EventsTableViewController.designer.cs">
+      <DependentUpon>EventsTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventTableViewCell.cs" />
+    <Compile Include="EventTableViewCell.designer.cs">
+      <DependentUpon>EventTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\PreferencesViewController.cs" />
+    <Compile Include="ViewControllers\PreferencesViewController.designer.cs">
+      <DependentUpon>PreferencesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeaderCell.cs" />
+    <Compile Include="HeaderCell.designer.cs">
+      <DependentUpon>HeaderCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventCell.cs" />
+    <Compile Include="EventCell.designer.cs">
+      <DependentUpon>EventCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\EventResponseFilter.cs" />
+    <Compile Include="ViewControllers\EventDetailsViewController.cs" />
+    <Compile Include="ViewControllers\EventDetailsViewController.designer.cs">
+      <DependentUpon>EventDetailsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ColorExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="TodaysEvents\TodaysEvents.csproj">
+      <IsAppExtension>true</IsAppExtension>
+      <Project>{A60B5064-53F1-4040-A61D-68D516518C2A}</Project>
+      <Name>TodaysEvents</Name>
+    </ProjectReference>
+    <ProjectReference Include="ReactorToday.Shared\ReactorToday.Shared.csproj">
+      <Project>{1C8C6E20-00F2-49FB-B3CB-0DA932A74B71}</Project>
+      <Name>ReactorToday.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\banner1.png" />
+    <BundleResource Include="Resources\banner2.png" />
+    <BundleResource Include="Resources\banner3.png" />
+    <BundleResource Include="Resources\London.png" />
+    <BundleResource Include="Resources\London%402x.png" />
+    <BundleResource Include="Resources\London%403x.png" />
+    <BundleResource Include="Resources\LondonSelected.png" />
+    <BundleResource Include="Resources\LondonSelected%402x.png" />
+    <BundleResource Include="Resources\LondonSelected%403x.png" />
+    <BundleResource Include="Resources\NewYork.png" />
+    <BundleResource Include="Resources\NewYork%402x.png" />
+    <BundleResource Include="Resources\NewYork%403x.png" />
+    <BundleResource Include="Resources\NewYorkSelected.png" />
+    <BundleResource Include="Resources\NewYorkSelected%402x.png" />
+    <BundleResource Include="Resources\NewYorkSelected%403x.png" />
+    <BundleResource Include="Resources\Redmond.png" />
+    <BundleResource Include="Resources\Redmond%402x.png" />
+    <BundleResource Include="Resources\Redmond%403x.png" />
+    <BundleResource Include="Resources\RedmondSelected.png" />
+    <BundleResource Include="Resources\RedmondSelected%402x.png" />
+    <BundleResource Include="Resources\RedmondSelected%403x.png" />
+    <BundleResource Include="Resources\SanFran.png" />
+    <BundleResource Include="Resources\SanFran%402x.png" />
+    <BundleResource Include="Resources\SanFran%403x.png" />
+    <BundleResource Include="Resources\SanFranSelected.png" />
+    <BundleResource Include="Resources\SanFranSelected%402x.png" />
+    <BundleResource Include="Resources\SanFranSelected%403x.png" />
+    <BundleResource Include="Resources\SanFransisco.png" />
+    <BundleResource Include="Resources\SanFransisco%402x.png" />
+    <BundleResource Include="Resources\SanFransisco%403x.png" />
+    <BundleResource Include="Resources\SanFransiscoSelected.png" />
+    <BundleResource Include="Resources\SanFransiscoSelected%402x.png" />
+    <BundleResource Include="Resources\SanFransiscoSelected%403x.png" />
+    <BundleResource Include="Resources\Seattle.png" />
+    <BundleResource Include="Resources\Seattle%402x.png" />
+    <BundleResource Include="Resources\Seattle%403x.png" />
+    <BundleResource Include="Resources\SeattleSelected.png" />
+    <BundleResource Include="Resources\SeattleSelected%402x.png" />
+    <BundleResource Include="Resources\SeattleSelected%403x.png" />
+    <BundleResource Include="Resources\Sydney.png" />
+    <BundleResource Include="Resources\Sydney%402x.png" />
+    <BundleResource Include="Resources\Sydney%403x.png" />
+    <BundleResource Include="Resources\SydneySelected.png" />
+    <BundleResource Include="Resources\SydneySelected%402x.png" />
+    <BundleResource Include="Resources\SydneySelected%403x.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

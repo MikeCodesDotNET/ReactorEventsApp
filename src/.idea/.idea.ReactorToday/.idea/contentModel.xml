@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_ReactorToday.-237229479.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p=".git/info/exclude" t="IncludeRecursive" />
+      <e p="AppDelegate.cs" t="Include" />
+      <e p="Assets.xcassets" t="Include">
+        <e p="AppIcon.appiconset" t="Include">
+          <e p="100.png" t="Include" />
+          <e p="1024.png" t="Include" />
+          <e p="128.png" t="Include" />
+          <e p="152.png" t="Include" />
+          <e p="16.png" t="Include" />
+          <e p="167.png" t="Include" />
+          <e p="256.png" t="Include" />
+          <e p="32.png" t="Include" />
+          <e p="512.png" t="Include" />
+          <e p="58.png" t="Include" />
+          <e p="60.png" t="Include" />
+          <e p="64.png" t="Include" />
+          <e p="76.png" t="Include" />
+          <e p="87.png" t="Include" />
+          <e p="App Store iOS.png" t="Include" />
+          <e p="AppIcon24x24@2x.png" t="Include" />
+          <e p="AppIcon27.5x27.5@2x.png" t="Include" />
+          <e p="AppIcon44x44@2x.png" t="Include" />
+          <e p="AppIcon86x86@2x.png" t="Include" />
+          <e p="AppIcon98x98@2x.png" t="Include" />
+          <e p="Contents.json" t="Include" />
+          <e p="iPad Notification 20pt.png" t="Include" />
+          <e p="iPad Notification 20pt@2x.png" t="Include" />
+          <e p="iPad Settings 29pt.png" t="Include" />
+          <e p="iPad Spotlight 40pt.png" t="Include" />
+          <e p="iPad Spotlight 40pt@2x.png" t="Include" />
+          <e p="iPhone App 60pt@2x.png" t="Include" />
+          <e p="iPhone App 60pt@3x.png" t="Include" />
+          <e p="iPhone Spotlight 40pt@2x.png" t="Include" />
+          <e p="iPhone Spotlight 40pt@3x.png" t="Include" />
+        </e>
+        <e p="Contents.json" t="Include" />
+      </e>
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Entitlements.plist" t="Include" />
+      <e p="EventTableViewCell.cs" t="Include" />
+      <e p="EventTableViewCell.designer.cs" t="Include" />
+      <e p="Info.plist" t="Include" />
+      <e p="LaunchScreen.storyboard" t="Include" />
+      <e p="Main.cs" t="Include" />
+      <e p="Main.storyboard" t="Include" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="packages.config" t="Include" />
+      <e p="PreferencesViewController.cs" t="Include" />
+      <e p="PreferencesViewController.designer.cs" t="Include" />
+      <e p="ReactorToday.Shared" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Helpers" t="Include">
+          <e p="ReactorLocations.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="Event.cs" t="Include" />
+          <e p="GeoPoint.cs" t="Include" />
+          <e p="Location.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="ReactorToday.Shared.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ReactorToday.Shared.csproj" t="IncludeRecursive" />
+        <e p="Services" t="Include">
+          <e p="EventsService.cs" t="Include" />
+        </e>
+      </e>
+      <e p="ReactorToday.sln" t="IncludeFlat" />
+      <e p="ReactorTodayContainer.csproj" t="IncludeRecursive" />
+      <e p="Resources" t="Include">
+        <e p="banner1.png" t="Include" />
+        <e p="banner2.png" t="Include" />
+        <e p="banner3.png" t="Include" />
+        <e p="London.png" t="Include" />
+        <e p="London@2x.png" t="Include" />
+        <e p="London@3x.png" t="Include" />
+        <e p="LondonSelected.png" t="Include" />
+        <e p="LondonSelected@2x.png" t="Include" />
+        <e p="LondonSelected@3x.png" t="Include" />
+        <e p="NewYork.png" t="Include" />
+        <e p="NewYork@2x.png" t="Include" />
+        <e p="NewYork@3x.png" t="Include" />
+        <e p="NewYorkSelected.png" t="Include" />
+        <e p="NewYorkSelected@2x.png" t="Include" />
+        <e p="NewYorkSelected@3x.png" t="Include" />
+        <e p="Redmond.png" t="Include" />
+        <e p="Redmond@2x.png" t="Include" />
+        <e p="Redmond@3x.png" t="Include" />
+        <e p="RedmondSelected.png" t="Include" />
+        <e p="RedmondSelected@2x.png" t="Include" />
+        <e p="RedmondSelected@3x.png" t="Include" />
+        <e p="SanFran.png" t="Include" />
+        <e p="SanFran@2x.png" t="Include" />
+        <e p="SanFran@3x.png" t="Include" />
+        <e p="SanFranSelected.png" t="Include" />
+        <e p="SanFranSelected@2x.png" t="Include" />
+        <e p="SanFranSelected@3x.png" t="Include" />
+        <e p="SanFransisco.png" t="Include" />
+        <e p="SanFransisco@2x.png" t="Include" />
+        <e p="SanFransisco@3x.png" t="Include" />
+        <e p="SanFransiscoSelected.png" t="Include" />
+        <e p="SanFransiscoSelected@2x.png" t="Include" />
+        <e p="SanFransiscoSelected@3x.png" t="Include" />
+        <e p="Seattle.png" t="Include" />
+        <e p="Seattle@2x.png" t="Include" />
+        <e p="Seattle@3x.png" t="Include" />
+        <e p="SeattleSelected.png" t="Include" />
+        <e p="SeattleSelected@2x.png" t="Include" />
+        <e p="SeattleSelected@3x.png" t="Include" />
+        <e p="Sydney.png" t="Include" />
+        <e p="Sydney@2x.png" t="Include" />
+        <e p="Sydney@3x.png" t="Include" />
+        <e p="SydneySelected.png" t="Include" />
+        <e p="SydneySelected@2x.png" t="Include" />
+        <e p="SydneySelected@3x.png" t="Include" />
+      </e>
+      <e p="TodaysEvents" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Entitlements.plist" t="Include" />
+        <e p="Info.plist" t="Include" />
+        <e p="MainInterface.storyboard" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Resources" t="Include" />
+        <e p="TodaysEvents.csproj" t="IncludeRecursive" />
+        <e p="TodayViewController.cs" t="Include" />
+        <e p="TodayViewController.designer.cs" t="Include" />
+      </e>
+      <e p="ViewControllers" t="Include">
+        <e p="EventsTableViewController.cs" t="Include" />
+        <e p="EventsTableViewController.designer.cs" t="Include" />
+        <e p="ViewController.cs" t="Include" />
+        <e p="ViewController.designer.cs" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>
